@@ -1,0 +1,1475 @@
+{
+	"info": {
+		"_postman_id": "b635a954-8084-400c-8117-4c48c7d0a747",
+		"name": "REST API Arquitectura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29897705"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "GET Usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1011\",\r\n    \"nombre_usuario\": \"diego\",\r\n    \"correo_usuario\": \"diego\",\r\n    \"perfil_usuario\": \"diego\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1011\",\r\n    \"nombre_usuario\": \"diego\",\r\n    \"correo_usuario\": \"diego\",\r\n    \"perfil_usuario\": \"diego\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/1001",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Usuario",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/1001",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Usuario",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1011\",\r\n    \"nombre_usuario\": \"diego\",\r\n    \"correo_usuario\": \"diego\",\r\n    \"perfil_usuario\": \"diego\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/1001",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Usuario",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_usuario\": \"1011\",\r\n    \"nombre_usuario\": \"diego\",\r\n    \"correo_usuario\": \"diego\",\r\n    \"perfil_usuario\": \"diego\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/usuarios/1001",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"usuarios",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proyectos",
+			"item": [
+				{
+					"name": "GET Proyectos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/proyectos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Proyecto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/proyectos/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"proyectos",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE proyecto",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/proyectos/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"proyectos",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST proyecto",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_proyecto\": \"107\",\r\n    \"id_usuario\": \"1003\",\r\n    \"nombre_proyecto\": \"proyecto_prueba\",\r\n    \"detalles_proyecto\": \"es un proyecto de prueba\",\r\n    \"id_estado\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/proyectos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Proyecto",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_proyecto\": \"105\",\r\n    \"id_usuario\": \"1003\",\r\n    \"nombre_proyecto\": \"proyecto_prueba\",\r\n    \"detalles_proyecto\": \"es un proyecto de prueba\",\r\n    \"id_estado\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/proyectos/105",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"proyectos",
+								"105"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tareas",
+			"item": [
+				{
+					"name": "GET Tareas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/tareas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"tareas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tarea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/tareas/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"tareas",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Tarea",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/tareas/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"tareas",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Tareas",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_proyecto\": \"105\",\r\n    \"id_usuario\": \"1003\",\r\n    \"nombre_proyecto\": \"proyecto_prueba\",\r\n    \"detalles_proyecto\": \"es un proyecto de prueba\",\r\n    \"id_estado\": \"1\",\r\n    \"detalles_tarea\": \"tarea de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/tareas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"tareas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Tarea",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_proyecto\": \"105\",\r\n    \"id_usuario\": \"1003\",\r\n    \"nombre_proyecto\": \"proyecto_prueba\",\r\n    \"detalles_proyecto\": \"es un proyecto de prueba\",\r\n    \"id_estado\": \"1\",\r\n    \"detalles_tarea\": \"tarea de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/tareas/105",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"tareas",
+								"105"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estados",
+			"item": [
+				{
+					"name": "GET Estados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/estados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Estado",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/estados/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"estados",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Estados",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/estados/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"estados",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Estado",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_estado\": \"105\",\r\n    \"nombre_estado\": \"Estado_prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/estados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Estados",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_estado\": \"105\",\r\n    \"nombre_estado\": \"Estado_prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/estados/105",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"estados",
+								"105"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Historial",
+			"item": [
+				{
+					"name": "GET Historial",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/historial",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"historial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Historial",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/historial/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"historial",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Historial",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/historial/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"historial",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Historial",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_historial\": \"105\",\r\n    \"id_usuario\": \"1003\",\r\n    \"id_proyecto\": \"104\",\r\n    \"id_tarea\": \"101\",\r\n    \"id_estado\": \"1\",\r\n    \"detalles_h\": \"Historial de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/historial",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"historial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Historial",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_historial\": \"105\",\r\n    \"id_usuario\": \"1003\",\r\n    \"id_proyecto\": \"104\",\r\n    \"id_tarea\": \"101\",\r\n    \"id_estado\": \"1\",\r\n    \"detalles_h\": \"Historial de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/historial/105",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"historial",
+								"105"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Perfiles",
+			"item": [
+				{
+					"name": "GET Perfiles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/perfiles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"perfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Perfil",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/perfiles/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"perfiles",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Perfil",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/perfiles/101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"perfiles",
+								"101"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Perfil",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_perfil\": \"105\",\r\n    \"nombre_perfil\": \"Perfil de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/perfiles",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"perfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Perfil",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Juan_Garcia@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "JuanGarcia",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_perfil\": \"105\",\r\n    \"nombre_perfil\": \"Perfil de prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/perfiles/105",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"perfiles",
+								"105"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
